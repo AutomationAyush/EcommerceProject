@@ -24,7 +24,7 @@ def setup(request):
         driver = webdriver.Chrome(executable_path="C:/Users/ayush.jain/chromedriver-win64.exe",options=options)
     elif browser_name=="firefox":
         driver = webdriver.Firefox(executable_path="C:/Users/ayush.jain/geckodriver.exe",options=options)
-    elif browser_name=="IE":
+    elif browser_name=="IE not":
         driver = webdriver.Edge(executable_path="C:/Users/ayush.jain/msedgedriver.exe",options=options)
 
     driver.maximize_window()
