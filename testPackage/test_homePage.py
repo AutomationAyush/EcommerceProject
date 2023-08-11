@@ -17,7 +17,7 @@ class TestHomePage(BaseClass):
         log.info("entering password")
         homePage.getPassword().send_keys('Password')
         homePage.getCheckbox().click()
-        log.info("sending geder information as "+getData["gender"])
+        log.info("sending geNder OF EMPLOYEE information as "+getData["gender"])
         self.dropdownSelectionByText(homePage.getGender(),getData["gender"])
         log.info("selecting employment staus")
         homePage.getEmpStatus().click()
