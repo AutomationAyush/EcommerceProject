@@ -1,0 +1,28 @@
+2023-08-09 00:16:43,154 :INFO :test_e2e :entering products page
+2023-08-09 00:16:45,406 :INFO :test_e2e :getting all the card tile
+2023-08-09 00:16:45,437 :INFO :test_e2e :adding the required product to the cart
+2023-08-09 00:16:45,473 :INFO :test_e2e :proceeding to final check out page
+2023-08-09 00:16:45,511 :INFO :test_e2e :entry the country text as Ind
+2023-08-09 00:16:50,899 :INFO :test_e2e :final message from the eccomerce application on check out is×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2023-08-09 00:16:52,743 :INFO :test_homePage :first name isAyush
+2023-08-09 00:16:52,796 :INFO :test_homePage :Email isa@a.in
+2023-08-09 00:16:52,837 :INFO :test_homePage :entering password
+2023-08-09 00:16:52,915 :INFO :test_homePage :sending geder information as Male
+2023-08-09 00:16:52,944 :INFO :test_homePage :selecting employment staus
+2023-08-09 00:16:53,031 :INFO :test_homePage :final message after the form submission is×
+Success! The Form has been submitted successfully!.
+2023-08-09 00:16:53,116 :INFO :test_homePage :first name isRahul
+2023-08-09 00:16:53,116 :INFO :test_homePage :first name isRahul
+2023-08-09 00:16:53,160 :INFO :test_homePage :Email isr@r.in
+2023-08-09 00:16:53,160 :INFO :test_homePage :Email isr@r.in
+2023-08-09 00:16:53,200 :INFO :test_homePage :entering password
+2023-08-09 00:16:53,200 :INFO :test_homePage :entering password
+2023-08-09 00:16:53,271 :INFO :test_homePage :sending geder information as Female
+2023-08-09 00:16:53,271 :INFO :test_homePage :sending geder information as Female
+2023-08-09 00:16:53,317 :INFO :test_homePage :selecting employment staus
+2023-08-09 00:16:53,317 :INFO :test_homePage :selecting employment staus
+2023-08-09 00:16:53,389 :INFO :test_homePage :final message after the form submission is×
+Success! The Form has been submitted successfully!.
+2023-08-09 00:16:53,389 :INFO :test_homePage :final message after the form submission is×
+Success! The Form has been submitted successfully!.

@@ -12,15 +12,18 @@ from utilities.BaseClass import BaseClass
 
 class TestOne(BaseClass):
     def test_e2e(self,setup):
+        log = self.getLogger()
 
         homePage = HomePage(self.driver)
 
+        log.info("entering products page")
         #self.driver.find_element(By.CSS_SELECTOR,"a[href*='shop']").click()
         homePage.shopItems().click()
 
 
         checkOutPage = CheckoutPage(self.driver)
 
+        log.info("getting all the card tile")
         #products = self.driver.find_elements(By.XPATH,"//div[@class = 'card h-100']")
         products = checkOutPage.getCardTitles()
 
@@ -31,13 +34,15 @@ class TestOne(BaseClass):
                 #product.find_element(By.CSS_SELECTOR,"button[class*='btn-info']").click()
                 product.checkOutPage.getCardFooterButton().click()
 
+        log.info("adding the required product to the cart")
         checkOutPage.getcCheckOutButtonPrimary().click()
+        log.info("proceeding to final check out page")
         checkOutPage.getcCheckOutButtonSuccess().click()
         # CHECKOUT PAGE FLOW END
 
 
         confirmPage = ConfirmPage(self.driver)
-
+        log.info("entry the country text as Ind")
         #self.driver.find_element(By.ID,'country').c
         confirmPage.getCountryBox().send_keys('ind')
         #wait=WebDriverWait(self.driver,10)
@@ -51,5 +56,6 @@ class TestOne(BaseClass):
         confirmPage.getSubmitButton().click()
         #successText = self.driver.find_element(By.CLASS_NAME,"alert-success").text
         successText = confirmPage.getSuccessMsg().text
-        assert "Success! Thank you!" in successText
+        log.info("final message from the eccomerce application on check out is"+successText)
+        assert "Not Success! Thank you!" in successText
 
